@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDBE6DD1194AC9290008F97F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE6DCF194AC9290008F97F /* FeedViewController.m */; };
+		EDBE6DD2194AC9290008F97F /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDBE6DD0194AC9290008F97F /* FeedViewController.xib */; };
+		EDBE6DD6194AE5370008F97F /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE6DD4194AE5370008F97F /* ComposeViewController.m */; };
+		EDBE6DD7194AE5370008F97F /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDBE6DD5194AE5370008F97F /* ComposeViewController.xib */; };
+		EDBE6DDB194FCB590008F97F /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE6DD9194FCB590008F97F /* MoreViewController.m */; };
+		EDBE6DDC194FCB590008F97F /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDBE6DDA194FCB590008F97F /* MoreViewController.xib */; };
 		EDE527B5194291B20078B9F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE527B4194291B20078B9F8 /* Foundation.framework */; };
 		EDE527B7194291B20078B9F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE527B6194291B20078B9F8 /* CoreGraphics.framework */; };
 		EDE527B9194291B20078B9F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE527B8194291B20078B9F8 /* UIKit.framework */; };
@@ -19,6 +25,8 @@
 		EDE527D0194291B20078B9F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE527B8194291B20078B9F8 /* UIKit.framework */; };
 		EDE527D8194291B20078B9F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDE527D6194291B20078B9F8 /* InfoPlist.strings */; };
 		EDE527DA194291B20078B9F8 /* Facebook_HW2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE527D9194291B20078B9F8 /* Facebook_HW2Tests.m */; };
+		EDE527E6194292940078B9F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE527E4194292940078B9F8 /* MainViewController.m */; };
+		EDE527E7194292940078B9F8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE527E5194292940078B9F8 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EDBE6DCE194AC9290008F97F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		EDBE6DCF194AC9290008F97F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		EDBE6DD0194AC9290008F97F /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		EDBE6DD3194AE5370008F97F /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		EDBE6DD4194AE5370008F97F /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		EDBE6DD5194AE5370008F97F /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
+		EDBE6DD8194FCB590008F97F /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		EDBE6DD9194FCB590008F97F /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		EDBE6DDA194FCB590008F97F /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		EDE527B1194291B20078B9F8 /* Facebook HW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook HW2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE527B4194291B20078B9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EDE527B6194291B20078B9F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +65,9 @@
 		EDE527D5194291B20078B9F8 /* Facebook HW2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Facebook HW2Tests-Info.plist"; sourceTree = "<group>"; };
 		EDE527D7194291B20078B9F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EDE527D9194291B20078B9F8 /* Facebook_HW2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facebook_HW2Tests.m; sourceTree = "<group>"; };
+		EDE527E3194292940078B9F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EDE527E4194292940078B9F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EDE527E5194292940078B9F8 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +131,18 @@
 				EDE527C4194291B20078B9F8 /* AppDelegate.m */,
 				EDE527C6194291B20078B9F8 /* Images.xcassets */,
 				EDE527BB194291B20078B9F8 /* Supporting Files */,
+				EDE527E3194292940078B9F8 /* MainViewController.h */,
+				EDE527E4194292940078B9F8 /* MainViewController.m */,
+				EDE527E5194292940078B9F8 /* MainViewController.xib */,
+				EDBE6DCE194AC9290008F97F /* FeedViewController.h */,
+				EDBE6DCF194AC9290008F97F /* FeedViewController.m */,
+				EDBE6DD0194AC9290008F97F /* FeedViewController.xib */,
+				EDBE6DD3194AE5370008F97F /* ComposeViewController.h */,
+				EDBE6DD4194AE5370008F97F /* ComposeViewController.m */,
+				EDBE6DD5194AE5370008F97F /* ComposeViewController.xib */,
+				EDBE6DD8194FCB590008F97F /* MoreViewController.h */,
+				EDBE6DD9194FCB590008F97F /* MoreViewController.m */,
+				EDBE6DDA194FCB590008F97F /* MoreViewController.xib */,
 			);
 			path = "Facebook HW2";
 			sourceTree = "<group>";
@@ -220,6 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE527BF194291B20078B9F8 /* InfoPlist.strings in Resources */,
+				EDBE6DDC194FCB590008F97F /* MoreViewController.xib in Resources */,
+				EDE527E7194292940078B9F8 /* MainViewController.xib in Resources */,
+				EDBE6DD2194AC9290008F97F /* FeedViewController.xib in Resources */,
+				EDBE6DD7194AE5370008F97F /* ComposeViewController.xib in Resources */,
 				EDE527C7194291B20078B9F8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE527C5194291B20078B9F8 /* AppDelegate.m in Sources */,
+				EDBE6DDB194FCB590008F97F /* MoreViewController.m in Sources */,
+				EDE527E6194292940078B9F8 /* MainViewController.m in Sources */,
+				EDBE6DD1194AC9290008F97F /* FeedViewController.m in Sources */,
+				EDBE6DD6194AE5370008F97F /* ComposeViewController.m in Sources */,
 				EDE527C1194291B20078B9F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +481,7 @@
 				EDE527DF194291B20078B9F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDE527E0194291B20078B9F8 /* Build configuration list for PBXNativeTarget "Facebook HW2Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +490,7 @@
 				EDE527E2194291B20078B9F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
