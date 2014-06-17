@@ -9,6 +9,11 @@
 #import "ComposeViewController.h"
 
 @interface ComposeViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *ComposeStatus;
+- (IBAction)EditChangeStatus:(id)sender;
+
+-(void)CancelCompose;
+-(void)EnablePost;
 
 @end
 
@@ -26,13 +31,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = @"Update Status";
+    
+    UIBarButtonItem *postbutton = [[UIBarButtonItem alloc] initWithTitle:@"Post" style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = postbutton;
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    
+    UIBarButtonItem *cancelbutton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(CancelCompose)];
+    self.navigationItem.leftBarButtonItem = cancelbutton;
+    
+    [self.ComposeStatus becomeFirstResponder];
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)EditChangeStatus:(id)sender {
+    [self performSelector:@selector(EnablePost) withObject:nil afterDelay:0];
+}
+
+-(void)CancelCompose{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)EnablePost{
+    if ([self.ComposeStatus.text isEqualToString:@""]) {
+            self.navigationItem.rightBarButtonItem.enabled = NO;
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    }
 }
 
 @end

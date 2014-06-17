@@ -9,6 +9,7 @@
 #import "FeedViewController.h"
 #import "ComposeViewController.h"
 #import "MainViewController.h"
+#import "MoreViewController.h"
 
 @interface FeedViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *FeedLoading;
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *TabBar;
 
 - (IBAction)OnStatusBar:(id)sender;
+- (IBAction)OnMore:(id)sender;
 
 - (void)ShowFeed;
 
@@ -49,10 +51,15 @@
     [self.FeedLoading startAnimating];
     
     self.ScrollFeedView.hidden = YES;
-    self.ScrollFeedView.contentSize = CGSizeMake(320, 800);
     
     [self performSelector:@selector(ShowFeed) withObject:nil afterDelay:2];
     
+}
+
+- (void)viewDidLayoutSubviews
+{
+    self.ScrollFeedView.contentSize = CGSizeMake(320, 500);
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,15 +71,19 @@
 - (IBAction)OnStatusBar:(id)sender {
     ComposeViewController *composeview = [[ComposeViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:composeview];
-    composeview.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
-    nvc.navigationBar.barTintColor = [UIColor colorWithRed:(59/255.0) green:(89/255.0) blue:(152/255.0) alpha:1];
-    nvc.navigationBar.translucent = NO;
-    nvc.navigationBar.tintColor = [UIColor whiteColor];
-    nvc.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    nvc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
     [self presentViewController:nvc animated:YES completion:nil];
+    
+    nvc.navigationBar.translucent = NO;
 
+}
+
+- (IBAction)OnMore:(id)sender {
+    MoreViewController *vc = [[MoreViewController alloc] init];
+    vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)ShowFeed{

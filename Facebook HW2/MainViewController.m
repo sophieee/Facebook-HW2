@@ -141,6 +141,8 @@
         [alertView show];
         
         [self.LogInLoading stopAnimating];
+        
+        self.LogIn.selected = NO;
     }
 }
 
